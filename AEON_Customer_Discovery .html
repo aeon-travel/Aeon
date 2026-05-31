@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AEON Customer Discovery Lab</title>
+<style>
+:root{
+--bg:#040816;
+--panel:#0b1224;
+--panel2:#101b35;
+--line:#1e3f78;
+--cyan:#38bdf8;
+--cyan2:#7dd3fc;
+--text:#d9e7ff;
+--muted:#8fa8c9;
+}
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:Inter,Arial,sans-serif;
+background:
+radial-gradient(circle at 20% 0%,rgba(56,189,248,.15),transparent 30%),
+radial-gradient(circle at 100% 20%,rgba(125,211,252,.1),transparent 25%),
+var(--bg);
+color:var(--text);
+}
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:40px;
+border-bottom:1px solid var(--line);
+}
+.hero h1{
+font-size:clamp(3rem,8vw,6rem);
+margin:0;
+}
+.hero span{color:var(--cyan)}
+.hero p{max-width:800px;margin:20px auto;color:var(--muted);font-size:1.2rem}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:20px;
+margin-top:50px;
+}
+.card{
+background:linear-gradient(180deg,rgba(56,189,248,.05),rgba(255,255,255,.02));
+border:1px solid var(--line);
+backdrop-filter:blur(10px);
+border-radius:20px;
+padding:24px;
+}
+.metric{font-size:3rem;font-weight:800;color:var(--cyan)}
+section{max-width:1200px;margin:auto;padding:90px 24px}
+h2{font-size:2.6rem;color:var(--cyan2)}
+.flow{
+display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin:40px 0
+}
+.flow div{
+padding:14px 20px;
+background:var(--panel);
+border:1px solid var(--line);
+border-radius:999px;
+}
+.highlight{font-size:1.2rem;color:var(--cyan2)}
+.split{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:24px;
+}
+ul li{margin:12px 0}
+.signal{
+height:10px;
+background:#09111f;
+border-radius:99px;
+overflow:hidden;
+margin-top:10px
+}
+.signal span{
+display:block;
+height:100%;
+background:linear-gradient(90deg,var(--cyan),var(--cyan2));
+}
+@media(max-width:768px){.split{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div>
+
+<h1>AE<span>ON</span><br>Customer Discovery Lab</h1>
+<p>Validation across travelers and suppliers reveals a shared problem: travel decisions are still powered by outdated search and distribution systems.</p>
+
+<div class="grid">
+<div class="card"><div class="metric">7.9</div>Traveler Interest Score</div>
+<div class="card"><div class="metric">8.2</div>Supplier Interest Score</div>
+<div class="card"><div class="metric">80%</div>Of Travelers Spend 3+ Hours Planning</div>
+<div class="card"><div class="metric">85%</div>Of Suppliers Pay 10–25% OTA Commissions</div>
+</div>
+</div>
+</div>
+
+<section>
+<h2>Traveler Friction</h2>
+<div class="flow">
+<div>Search</div><div>Compare</div><div>Re‑Search</div><div>Validate</div><div>Book</div>
+</div>
+
+<div class="card">
+<p>Unclear Pricing & Value — 29.5%</p>
+<div class="signal"><span style="width:29.5%"></span></div>
+
+<p>Too Much Time Finding Options — 27.3%</p>
+<div class="signal"><span style="width:27.3%"></span></div>
+
+<p>Compare Multiple Websites — 22.7%</p>
+<div class="signal"><span style="width:22.7%"></span></div>
+</div>
+</section>
+
+<section>
+<h2>Confidence Gap</h2>
+<div class="card" style="text-align:center">
+<div class="metric">0%</div>
+<p class="highlight">Very confident they are getting the best match and deal.</p>
+</div>
+</section>
+
+<section>
+<h2>Supplier Friction</h2>
+<div class="grid">
+<div class="card"><div class="metric">53.8%</div>OTA commissions biggest challenge</div>
+<div class="card"><div class="metric">84.7%</div>Pay 10–25% commission</div>
+<div class="card"><div class="metric">61.6%</div>Visibility challenges</div>
+<div class="card"><div class="metric">61.5%</div>Cannot react instantly</div>
+</div>
+</section>
+
+<section>
+<h2>Shared Problem</h2>
+<div class="split">
+<div class="card">
+<h3>Travelers</h3>
+<ul>
+<li>Difficulty finding the right option</li>
+<li>Low confidence</li>
+<li>Planning fatigue</li>
+<li>Unclear value</li>
+</ul>
+</div>
+<div class="card">
+<h3>Suppliers</h3>
+<ul>
+<li>High commissions</li>
+<li>Poor visibility</li>
+<li>Operational burden</li>
+<li>Margin pressure</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<h2>AEON: The Missing Layer</h2>
+<div class="flow">
+<div>Demand</div><div>Inventory</div><div>Pricing</div><div>Traveler Intent</div><div>Market Dynamics</div><div>Competition</div><div>Supplier Goals</div>
+</div>
+<div class="card">
+<h3 style="color:#7dd3fc">Real-Time Travel Decision Layer</h3>
+<p>AEON understands traveler intent, interprets real-time market signals, optimizes pricing and allocation, and executes the best outcome automatically.</p>
+</div>
+</section>
+
+</body>
+</html>
